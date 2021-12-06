@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-function Section({title ,Description, BackgroundImg,leftBtnText,RightBtnText} ) {
-   
+function Section({
+  title,
+  Description,
+  BackgroundImg,
+  leftBtnText,
+  RightBtnText,
+}) {
   return (
-     
     <Wrap bgImage={BackgroundImg}>
       <ProductText>
         <h1>{title}</h1>
@@ -12,7 +16,7 @@ function Section({title ,Description, BackgroundImg,leftBtnText,RightBtnText} ) 
       <Buttons>
         <ButtonSection>
           <LeftButton>{leftBtnText}</LeftButton>
-          <RightButton>{RightBtnText}</RightButton>
+          {RightBtnText && <RightButton>{RightBtnText}</RightButton>}
         </ButtonSection>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>
@@ -32,7 +36,7 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-itens: center;
- background-image: ${props =>`url("/images/${props.bgImage}")`}
+  background-image: ${(props) => `url("/images/${props.bgImage}")`};
 `;
 const ProductText = styled.div`
   padding-top: 15vh;
@@ -44,7 +48,7 @@ const ButtonSection = styled.div`
   justify-content: center;
   margin-bottom: 50px;
   @media (max-width: 768px) {
-      flex-direction: column;
+    flex-direction: column;
   }
 `;
 const LeftButton = styled.div`
