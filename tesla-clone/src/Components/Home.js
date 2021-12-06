@@ -32,6 +32,26 @@ function Home() {
       leftBtnText="Custom Order"
       RightBtnText="Existing Inventory"
       />
+      <Section
+      title="Lower Cost Solar Panels in America"
+      Description="Money-Back Guarantee"
+      BackgroundImg="solar-panel.jpg"
+      leftBtnText="Custom Order"
+      RightBtnText="Learn More"
+      />
+      <Section
+      title="Solar Roof"
+      Description="Produce Clean Energy From Your Roof"
+      BackgroundImg="solar-roof.jpg"
+      leftBtnText="Order now"
+      RightBtnText="Learn More"
+      />
+      <Section
+      title="Accessories"
+      Description=""
+      BackgroundImg="accessories.jpg"
+      leftBtnText="Shop now"
+      />
       </Container>
     )
     
