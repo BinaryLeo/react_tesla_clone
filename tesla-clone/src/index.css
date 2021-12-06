@@ -9,7 +9,9 @@ body {
   width: 100px;
   overflow-x: hidden;
 }
-
+a {
+  text-decoration: none;
+}
 @keyframes animateDown {
   0%,
   20%,
