@@ -57,7 +57,7 @@ function Header() {
           <a href="/#">Powerwall</a>
         </li>
         <li>
-          <a href="/#">Commercisl Energy</a>
+          <a href="/#">Commercial Energy</a>
         </li>
         <li>
           <a href="/#">Utilities</a>
@@ -75,7 +75,7 @@ function Header() {
           <span>
             <Globe />
           </span>
-          <a href="/#">Investor Relations</a>
+          <a href="/#">United States</a>
           <span>English</span>
         </li>
       </BurgerNav>
@@ -150,10 +150,10 @@ const BurgerNav = styled.div`
   bottom: 0;
   right: 0;
   background: white;
-  width: 300px;
+  width: 260px;
   z-index: 16;
   list-style: none;
-  padding: 50px;
+  padding: 20px;
   text-align: start;
   font-size: 14px;
   transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
@@ -162,6 +162,7 @@ const BurgerNav = styled.div`
     padding: 10px;
 
     a {
+      margin-left:5px;
       font-weight: 600;
       color: rgba(29, 26, 27, 0.6);
     }
@@ -174,6 +175,7 @@ const BurgerNav = styled.div`
 const CloseWraper = styled.div`
   display: flex;
   justify-content: flex-end;
+  margin-bottom:30px;
 `;
 
 const CloseBtn = styled(CloseIcon)`
