@@ -1,27 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 function Section({
   title,
   Description,
+  Complement,
   BackgroundImg,
   leftBtnText,
   RightBtnText,
 }) {
   return (
     <Wrap bgImage={BackgroundImg}>
-    <Fade bottom>
-      <ProductText>
-        <h1>{title}</h1>
-        <p>{Description}</p>
-      </ProductText>
-      <Buttons>
-        <ButtonSection>
-          <LeftButton>{leftBtnText}</LeftButton>
-          {RightBtnText && <RightButton>{RightBtnText}</RightButton>}
-        </ButtonSection>
-        <DownArrow src="/images/down-arrow.svg" />
-      </Buttons>
+      <Fade bottom>
+        <ProductText>
+          <h1>{title}</h1>
+          <p>
+            {Description}
+            {Complement && <Spanme>{Complement}</Spanme>}
+          </p>
+        </ProductText>
+        <Buttons>
+          <ButtonSection>
+            <LeftButton>{leftBtnText}</LeftButton>
+            {RightBtnText && <RightButton>{RightBtnText}</RightButton>}
+          </ButtonSection>
+          <DownArrow src="/images/down-arrow.svg" />
+        </Buttons>
       </Fade>
     </Wrap>
   );
@@ -41,10 +45,21 @@ const Wrap = styled.div`
   align-itens: center;
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
 `;
+
+const Spanme = styled.div`
+  text-align: center;
+  display: inline-block;
+  margin-left: 5px;
+  text-decoration: underline;
+  cursor:pointer;
+`;
 const ProductText = styled.div`
   padding-top: 15vh;
-  text-align: center;
+  p {
+    padding-top: 20px;
+  }
 `;
+
 const ButtonSection = styled.div`
   display: flex;
   align-itens: center;
@@ -73,7 +88,7 @@ const LeftButton = styled.div`
 `;
 const RightButton = styled(LeftButton)`
   background-color: #e1dddd;
-  opacity: 0.65;
+  opacity: 0.85;
   color: #333539;
 `;
 const Buttons = styled.div``;
