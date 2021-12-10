@@ -3,9 +3,11 @@ import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import LanguageIcon from "@material-ui/icons/Language";
+import { selectCars } from "../features/car/CarSlice";
+import { useSelector } from "react-redux";
 function Header() {
   const [burgerState, setBurgerState] = useState(false);
-
+  const cars = useSelector(selectCars);
   return (
     <Container>
       <Logo>
@@ -48,12 +50,12 @@ function Header() {
       </Logo>
 
       <Menu>
-        <a href="/#">Model S</a>
-        <a href="/#">Model 3</a>
-        <a href="/#">Model X</a>
-        <a href="/#">Model Y</a>
-        <a href="/#">Solar Roof</a>
-        <a href="/#">Solar Panels</a>
+        {cars &&
+          cars.map((car, index) => (
+            <a key={index} href="/#">
+              {car}
+            </a>
+          ))}
       </Menu>
       <RightMenu>
         <a href="/#">Shop</a>
@@ -108,11 +110,13 @@ function Header() {
           <a href="/#">Investor Relations</a>
         </li>
         <li>
+          <Globe />
           <span>
-            <Globe />
+            {" "}
+            <a href="/#">United States</a>
+            <br />
+            English
           </span>
-          <a href="/#">United States</a>
-          <span>English</span>
         </li>
       </BurgerNav>
     </Container>
@@ -205,19 +209,31 @@ const BurgerNav = styled.div`
   font-size: 14px;
   transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.2s;
+  
   li {
     padding: 10px;
-
+    
     a {
-      margin-left: 5px;
       font-weight: 600;
       color: rgba(29, 26, 27, 0.6);
+    
     }
+    span {
+    color: rgba(29, 26, 27, 0.6);
+    font-size: 14px;
+    display:inline-block;
+    margin-left:10px;
+    text-align: start;
+    vertical-align: middle;
+    line-height: 150%;
   }
+ 
   li:hover {
     background: rgba(29, 26, 27, 0.1);
     border-radius: 10px;
   }
+
+  
 `;
 const CloseWraper = styled.div`
   display: flex;

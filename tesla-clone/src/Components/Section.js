@@ -51,6 +51,7 @@ const Spanme = styled.div`
   display: inline-block;
   margin-left: 5px;
   text-decoration: underline;
+  text-underline-offset: 5px;
   cursor:pointer;
 `;
 const ProductText = styled.div`
