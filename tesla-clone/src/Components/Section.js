@@ -52,7 +52,7 @@ const Spanme = styled.div`
   margin-left: 5px;
   text-decoration: underline;
   text-underline-offset: 5px;
-  cursor:pointer;
+  cursor: pointer;
 `;
 const ProductText = styled.div`
   padding-top: 15vh;
