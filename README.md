@@ -26,6 +26,6 @@ First Section - Navbar - Menu
 ![service](https://user-images.githubusercontent.com/72607039/145507645-7a5950ce-3014-4347-a4e8-72a57737aaf2.gif)
 
 ##
-All Page
+Whole Page
 ##
 ![img](https://user-images.githubusercontent.com/72607039/145511164-5a61c441-3add-4b2f-8266-8f9d937a2177.gif)
