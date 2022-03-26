@@ -142,7 +142,7 @@ const Container = styled.div`
   min-height: 60px;
   position: fixed;
   display: flex;
-  align-itens: center;
+  align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   top: 0;
@@ -234,7 +234,7 @@ const BurgerNav = styled.div`
   }
 
   
-`;
+  }`;
 const CloseWraper = styled.div`
   display: flex;
   justify-content: flex-end;
