@@ -42,7 +42,7 @@ const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-itens: center;
+  align-items: center;
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
 `;
 

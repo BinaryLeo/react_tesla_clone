@@ -8,7 +8,7 @@ function Home() {
         title="Model S"
         Description="Order Online for"
         Complement="Touchless Delivery"
-        BackgroundImg="model-s.jpg"
+        BackgroundImg="../../public/images/model-s.jpg"
         leftBtnText="Custom Order"
         RightBtnText="Existing Inventory"
       />
@@ -16,14 +16,14 @@ function Home() {
         title="Model Y"
         Description="Order Online for"
         Complement="Touchless Delivery"
-        BackgroundImg="model-y.jpg"
+        BackgroundImg="../../public/images/model-y.jpg"
         leftBtnText="Custom Order"
         RightBtnText="Existing Inventory"
       />
       <Section
         title="Model 3"
         Description="Order Online for"
-        Complement="Touchless Delivery"
+        Complement="../../public/images/Touchless Delivery"
         BackgroundImg="model-3.jpg"
         leftBtnText="Custom Order"
         RightBtnText="Existing Inventory"
@@ -32,28 +32,28 @@ function Home() {
         title="Model X"
         Description="Order Online for"
         Complement="Touchless Delivery"
-        BackgroundImg="model-x.jpg"
+        BackgroundImg="../../public/images/model-x.jpg"
         leftBtnText="Custom Order"
         RightBtnText="Existing Inventory"
       />
       <Section
         title="Solar Panels"
         Description="Lowest Cost Solar Panels in America"
-        BackgroundImg="solar-panel.jpg"
+        BackgroundImg="../../public/images/solar-panel.jpg"
         leftBtnText="Order Now"
         RightBtnText="Learn More"
       />
       <Section
         title="Solar Roof"
         Description="Produce Clean Energy From Your Roof"
-        BackgroundImg="solar-roof.jpg"
+        BackgroundImg="../../public/images/solar-roof.jpg"
         leftBtnText="Order now"
         RightBtnText="Learn More"
       />
       <Section
         title="Accessories"
         Description=""
-        BackgroundImg="accessories.jpg"
+        BackgroundImg="../../public/images/accessories.jpg"
         leftBtnText="Shop now"
       />
       <Footer>
@@ -90,7 +90,7 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  heigh: 100vh;
+  height: 100vh;
   p {
     width: 100vw;
     height: 20px;
@@ -104,7 +104,7 @@ const Container = styled.div`
 `;
 const Footer = styled.div`
   width: 100vw;
-  heigh: 150px;
+  height: 150px;
   padding: 20px;
   color: rgba(29, 26, 27, 0.6);
   display: flex;
