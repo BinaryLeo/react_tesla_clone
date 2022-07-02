@@ -29,4 +29,3 @@ First Section - Navbar - Menu
 Whole Page
 ##
 ![img](https://user-images.githubusercontent.com/72607039/145511164-5a61c441-3add-4b2f-8266-8f9d937a2177.gif)
-

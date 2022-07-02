@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from "./Components/Header"
 import Home from "./Components/Home"
-function App() {
+export function App() {
   return (
     <div className="App">
       <Header/>
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+

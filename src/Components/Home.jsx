@@ -8,7 +8,7 @@ function Home() {
         title="Model S"
         Description="Order Online for"
         Complement="Touchless Delivery"
-        BackgroundImg="../../public/images/model-s.jpg"
+        BackgroundImg="model-s.jpg"
         leftBtnText="Custom Order"
         RightBtnText="Existing Inventory"
       />
@@ -16,14 +16,14 @@ function Home() {
         title="Model Y"
         Description="Order Online for"
         Complement="Touchless Delivery"
-        BackgroundImg="../../public/images/model-y.jpg"
+        BackgroundImg="model-y.jpg"
         leftBtnText="Custom Order"
         RightBtnText="Existing Inventory"
       />
       <Section
         title="Model 3"
         Description="Order Online for"
-        Complement="../../public/images/Touchless Delivery"
+        Complement="Touchless Delivery"
         BackgroundImg="model-3.jpg"
         leftBtnText="Custom Order"
         RightBtnText="Existing Inventory"
@@ -32,28 +32,28 @@ function Home() {
         title="Model X"
         Description="Order Online for"
         Complement="Touchless Delivery"
-        BackgroundImg="../../public/images/model-x.jpg"
+        BackgroundImg="model-x.jpg"
         leftBtnText="Custom Order"
         RightBtnText="Existing Inventory"
       />
       <Section
         title="Solar Panels"
         Description="Lowest Cost Solar Panels in America"
-        BackgroundImg="../../public/images/solar-panel.jpg"
+        BackgroundImg="solar-panel.jpg"
         leftBtnText="Order Now"
         RightBtnText="Learn More"
       />
       <Section
         title="Solar Roof"
         Description="Produce Clean Energy From Your Roof"
-        BackgroundImg="../../public/images/solar-roof.jpg"
+        BackgroundImg="solar-roof.jpg"
         leftBtnText="Order now"
         RightBtnText="Learn More"
       />
       <Section
         title="Accessories"
         Description=""
-        BackgroundImg="../../public/images/accessories.jpg"
+        BackgroundImg="accessories.jpg"
         leftBtnText="Shop now"
       />
       <Footer>

@@ -46,7 +46,7 @@ const Wrap = styled.div`
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
 `;
 
-const Spanme = styled.div`
+const Spanme = styled.strong`
   text-align: center;
   display: inline-block;
   margin-left: 5px;
@@ -63,7 +63,7 @@ const ProductText = styled.div`
 
 const ButtonSection = styled.div`
   display: flex;
-  align-itens: center;
+  align-items: center;
   justify-content: center;
   margin-bottom: 50px;
   @media (max-width: 768px) {
